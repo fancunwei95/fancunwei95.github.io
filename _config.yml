@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:cfan11@illinois.edu"
+      url: "mailto:cfan11@illinois.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://fancunwei95.github.io"
@@ -125,7 +125,7 @@ author:
       url: "https://fancunwei.github.io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
