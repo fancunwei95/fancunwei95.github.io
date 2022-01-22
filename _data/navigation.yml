@@ -4,13 +4,13 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   #- title: "About"
   #  url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "CV"
-    url: /CV/
+  - title: "About"
+    url: /about/
   - title: "Notes"
     url: /notes/
   - title: "Projects"
     url: /projects/
-  - title: "Personal Life"
-    url: /life/
+  - title: "Life Blogs"
+    utl: /life/
   - title: "More"
     url: /more/
