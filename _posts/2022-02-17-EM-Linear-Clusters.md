@@ -45,7 +45,8 @@ $$
 \theta_{n+1} = \arg\max_{\theta} \sum_{i=1}^N \sum_{z_i=1}^C p(z_i|\mathbf{x}_i,y_i,\theta_n) \left( \log(\alpha_{z_i}) -\frac{1}{2}\log \sigma_{z_i}^2 -  \frac{(y_i-\mathbf{x}_i\beta_{z_i})^2 }{2\sigma_{z_i}^2} \right)
 $$
 
-Note the factor $p(z_i = z|x_i,y_i,\theta_n)$ is fixed in this step and it simply assigns the point $\mathbf{x}_i,y_i$ to a specific cluster. We simplify the notation as $p({z_i}=z) = p(z_i = z|x_i,y_i,\theta_n)$. We also need to optimize subject to the constraint that $\sum_c \alpha_c = 1$.  Thus, the function becomes
+Note the factor $p(z_i = z \vert x_i,y_i,\theta_n)$ is fixed in this step and it simply assigns the point $\mathbf{x}_i,y_i$ to a specific cluster. 
+We simplify the notation as $p(z_i=z) = p(z_i = z\vert x_i,y_i,\theta_n)$. We also need to optimize subject to the constraint that $\sum_c \alpha_c = 1$.  Thus, the function becomes
 
 $$
 l(\theta) = \sum_{i=1}^N \sum_{z=1}^C p(z_i = z )\left( \log(\alpha_{z}) -\frac{1}{2}\log \sigma_{z}^2 -  \frac{(y_i-\mathbf{x}_i\beta_{z})^2 }{2\sigma_{z}^2} \right) - \lambda \sum_{c=1}^C \alpha_c
@@ -274,7 +275,7 @@ This estimation is pretty good except that because the variance for the slope $1
 
 If we play with it by setting the line with slope $10$ to have $\sigma^2= 0.3^2$ and the the line with slope $1$ to have $\sigma^2 = 0.5^2$, we will see that 
 
-![image3](/assets/images/tech_images/EMCluster_Clas2.png){: .align-center}
+![image3](/assets/images/tech_images/EMCluster_Clas_2.png){: .align-center}
 
 and the outputs as 
 
