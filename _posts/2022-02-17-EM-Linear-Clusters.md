@@ -167,8 +167,7 @@ def fit(self, X,y):
     # previous codes...
     it = 0
     err = None 
-    while it < self.max_itr :
-            
+    while it < self.max_itr :   
         diffs = (y[:,None] - X.dot(self.betas.T))**2  # N*C
         pz = np.exp(-0.5*diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas #N*C
         pz = pz/np.sum(pz, axis=1, keepdims=True)
@@ -182,7 +181,7 @@ def fit(self, X,y):
     # previous codes ....
     # in the while loop: 
     while it < self.max_itr :
-        # ...... 
+        # ...
         for c in range(self.C):
             M = X.T.dot(X*pz[:,c,None])
             self.betas[c,:] = np.linalg.solve(M,X.T.dot(y*pz[:,c])) 
@@ -208,7 +207,6 @@ Then we completed the main part of the algorithm. we just need to give some cond
         err = None
         diffs = (y[:,None] - X.dot(self.betas.T))**2  # N*C # put the diffs here to avoid calculating it twice
         while it < self.max_itr :
-
             pz = np.exp(-0.5*diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas #N*C
             pz = pz/np.sum(pz, axis=1, keepdims=True)
             self.alphas = np.sum(pz, axis = 0)
