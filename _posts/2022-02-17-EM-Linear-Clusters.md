@@ -145,15 +145,15 @@ class LinearClustering(object):
 The main part is to implement the fit algorithm. We first set up the inputs correctly in `numpy` :
 
 ```python
-	def fit(self, X,y):
-        X = np.array(X)
-        y = np.array(y)
-        if len(X.shape) == 1 :
-            X = X[:,None]
-        if self.with_intercept:
-            X = np.vstack( (np.ones(X.shape[0],1), X ) )
-        if self.betas is None:
-            self.betas = np.random.normal(0,1,size=(self.C, X.shape[1]))
+def fit(self, X,y):
+    X = np.array(X)
+    y = np.array(y)
+    if len(X.shape) == 1 :
+        X = X[:,None]
+    if self.with_intercept:
+        X = np.vstack( (np.ones(X.shape[0],1), X ) )
+    if self.betas is None:
+        self.betas = np.random.normal(0,1,size=(self.C, X.shape[1]))
 
 ```
 
@@ -163,32 +163,31 @@ Here, we set up `diffs` as $N\times C$ matrix with row $i$ and column $j$ indica
 Then we update `alphas` by the previous calculation.  
 
 ```python
-	def fit(self, X,y): 
-		# previous codes...
-		it = 0
-        err = None 
-        while it < self.max_itr :
-        	   
-        	diffs = (y[:,None] - X.dot(self.betas.T))**2  # N*C
-            pz = np.exp(-0.5*diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas #N*C
-            pz = pz/np.sum(pz, axis=1, keepdims=True)
-            self.alphas = np.sum(pz, axis = 0)
-            self.alphas = self.alphas/np.sum(self.alphas)
-
+def fit(self, X,y): 
+    # previous codes...
+    it = 0
+    err = None 
+    while it < self.max_itr :
+            
+        diffs = (y[:,None] - X.dot(self.betas.T))**2  # N*C
+        pz = np.exp(-0.5*diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas #N*C
+        pz = pz/np.sum(pz, axis=1, keepdims=True)
+        self.alphas = np.sum(pz, axis = 0)
+        self.alphas = self.alphas/np.sum(self.alphas)
 ```
 By the similar logic, we update $\beta_c$ for each cluster c. With the updated new $\beta_c$, we can estimate the variance of the linear model $\sigma_c^2$. 
 
 ```python
-	def fit(self, X,y):
-		# previous codes ....
-		# in the while loop: 
-
-			for c in range(self.C):
-                M = X.T.dot(X*pz[:,c,None])
-                self.betas[c,:] = np.linalg.solve(M,X.T.dot(y*pz[:,c])) 
-            diffs = (y[:,None] - X.dot(self.betas.T))**2  #N*C
-            self.sigmas = np.sum(pz*diffs, axis = 0)/np.sum(pz, axis = 0)
-
+def fit(self, X,y):
+    # previous codes ....
+    # in the while loop: 
+    while it < self.max_itr :
+        # ...... 
+        for c in range(self.C):
+            M = X.T.dot(X*pz[:,c,None])
+            self.betas[c,:] = np.linalg.solve(M,X.T.dot(y*pz[:,c])) 
+        diffs = (y[:,None] - X.dot(self.betas.T))**2  #N*C
+        self.sigmas = np.sum(pz*diffs, axis = 0)/np.sum(pz, axis = 0)
 
 ```
 
@@ -284,8 +283,8 @@ alphas [0.70387515 0.29612485]
 sigmas [0.0943882  0.19680254]
 beta1 [9.98451242]
 beta2 [1.05238964]
-
 ```
+
 which is quite close to the hidden parameters.
 
 
