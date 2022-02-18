@@ -7,7 +7,7 @@ classes: wide
 
 Here is an interesting situation occurred to me. In a scatter plot, it is clear that there are two straight lines and each line is contanminated by some noise. Then it is interesting to find the slopes of the line and cluster the points. Since the original data is classified, let's do some simple toy test. Here I generate a toy example:
 
-[!image](/assets/images/tech_images/EMCluster_Raw.png){: .align-center})
+[!image](/assets/images/tech_images/EMCluster_Raw.png){: .align-center}
 
 ```python
 X = np.random.uniform(0,1,size= 1000)
@@ -253,7 +253,7 @@ plt.scatter(X,y,c = clas)
 plt.show()
 ```
 
-[!image](/assets/images/tech_images/EMCluster_Clas.png){: .align-center})
+[!image](/assets/images/tech_images/EMCluster_Clas.png){: .align-center}
 
 It is also worths to check out parameter estimation:
 ```python
