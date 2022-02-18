@@ -193,51 +193,51 @@ def fit(self, X,y):
 Then we completed the main part of the algorithm. we just need to give some conditions for it to stop. Here, I choose to use the two norms of $\beta$. I averaged the two norms of the change of $\beta$ over the clusters. Below is the complete code for the `fit` function. Here I modified the code a little bit so that the calculation for `diffs` will occur once for each iteration. 
 
 ```python
-	def fit(self, X,y):
-        X = np.array(X)
-        y = np.array(y)
-        if len(X.shape) == 1 :
-            X = X[:,None]
-        if self.with_intercept:
-            X = np.vstack( (np.ones(X.shape[0],1), X ) )
-        if self.betas is None:
-            self.betas = np.random.normal(0,1,size=(self.C, X.shape[1]))
+def fit(self, X,y):
+    X = np.array(X)
+    y = np.array(y)
+    if len(X.shape) == 1 :
+        X = X[:,None]
+    if self.with_intercept:
+        X = np.vstack( (np.ones(X.shape[0],1), X ) )
+    if self.betas is None:
+        self.betas = np.random.normal(0,1,size=(self.C, X.shape[1]))
 
-        it = 0
-        err = None
-        diffs = (y[:,None] - X.dot(self.betas.T))**2  # N*C # put the diffs here to avoid calculating it twice
-        while it < self.max_itr :
-            pz = np.exp(-0.5*diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas #N*C
-            pz = pz/np.sum(pz, axis=1, keepdims=True)
-            self.alphas = np.sum(pz, axis = 0)
-            self.alphas = self.alphas/np.sum(self.alphas)
-            old_betas = np.copy(self.betas)
-            for c in range(self.C):
-                M = X.T.dot(X*pz[:,c,None])
-                self.betas[c,:] = np.linalg.solve(M,X.T.dot(y*pz[:,c]))
-            diffs = (y[:,None] - X.dot(self.betas.T))**2  #N*C
-            self.sigmas = np.sum(pz*diffs, axis = 0)/np.sum(pz, axis = 0)
-            err = np.mean(np.sqrt(np.sum((self.betas - old_betas)**2, axis=1)) )
-            if err < 0.8* self.atol:
-                print (it, err)
-                break
-            it+=1
+    it = 0
+    err = None
+    diffs = (y[:,None] - X.dot(self.betas.T))**2  # N*C # put the diffs here to avoid calculating it twice
+    while it < self.max_itr :
+        pz = np.exp(-0.5*diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas #N*C
+        pz = pz/np.sum(pz, axis=1, keepdims=True)
+        self.alphas = np.sum(pz, axis = 0)
+        self.alphas = self.alphas/np.sum(self.alphas)
+        old_betas = np.copy(self.betas)
+        for c in range(self.C):
+            M = X.T.dot(X*pz[:,c,None])
+            self.betas[c,:] = np.linalg.solve(M,X.T.dot(y*pz[:,c]))
+        diffs = (y[:,None] - X.dot(self.betas.T))**2  #N*C
+        self.sigmas = np.sum(pz*diffs, axis = 0)/np.sum(pz, axis = 0)
+        err = np.mean(np.sqrt(np.sum((self.betas - old_betas)**2, axis=1)) )
+        if err < 0.8* self.atol:
+            print (it, err)
+            break
+        it+=1
 
-        return self
+    return self
 ```
 
 The prediction function should be striaght forward and below is the code.
 ```python
-	def predict(self, X, y ):
-        X = np.array(X)
-        y = np.array(y)
-        if len(X.shape) == 1 :
-            X = X[:,None]
-        if self.with_intercept:
-            X = np.vstack( (np.ones(X.shape[0],1), X ) )
-        diffs = 0.5*(y[:,None] - X.dot(self.betas.T))**2 
-        pz = np.exp(-diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas 
-        return np.argmax(pz, axis=1).ravel()
+def predict(self, X, y ):
+    X = np.array(X)
+    y = np.array(y)
+    if len(X.shape) == 1 :
+        X = X[:,None]
+    if self.with_intercept:
+        X = np.vstack( (np.ones(X.shape[0],1), X ) )
+    diffs = 0.5*(y[:,None] - X.dot(self.betas.T))**2 
+    pz = np.exp(-diffs/self.sigmas)/np.sqrt(2*np.pi*self.sigmas)*self.alphas 
+    return np.argmax(pz, axis=1).ravel()
 
 ```
 
