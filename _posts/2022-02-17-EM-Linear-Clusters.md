@@ -7,7 +7,7 @@ classes: wide
 
 Here is an interesting situation occurred to me. In a scatter plot, it is clear that there are two straight lines and each line is contanminated by some noise. Then it is interesting to find the slopes of the line and cluster the points. Since the original data is classified, let's do some simple toy test. Here I generate a toy example:
 
-[!image](/assets/images/tech_images/EMCluster_Raw.png){: .align-center}
+![image1](/assets/images/tech_images/EMCluster_Raw.png){: .align-center}
 
 ```python
 X = np.random.uniform(0,1,size= 1000)
@@ -253,7 +253,7 @@ plt.scatter(X,y,c = clas)
 plt.show()
 ```
 
-[!image](/assets/images/tech_images/EMCluster_Clas.png){: .align-center}
+![image2](/assets/images/tech_images/EMCluster_Clas.png){: .align-center}
 
 It is also worths to check out parameter estimation:
 ```python
@@ -271,6 +271,22 @@ beta2 [9.99494678]
 ```
 
 This estimation is pretty good except that because the variance for the slope $1$ cluster is too large, the slope estimation is not that good. This effect is worse when we only have 30 percent of the data points are from that cluster. 
+
+If we play with it by setting the line with slope $10$ to have $\sigma^2= 0.3^2$ and the the line with slope $1$ to have $\sigma^2 = 0.5^2$, we will see that 
+
+![image3](/assets/images/tech_images/EMCluster_Clas2.png){: .align-center}
+
+and the outputs as 
+
+```
+alphas [0.70387515 0.29612485]
+sigmas [0.0943882  0.19680254]
+beta1 [9.98451242]
+beta2 [1.05238964]
+
+```
+which is quite close to the hidden parameters.
+
 
 ### Some Comments
 Althogh this works for this simple toy problem, it is not guaranteed to converge well on an arbitrary dataset. This heavily depends on the initialization. Also, this algorithm is not the only possible one. Here we use the $y$ distance 
