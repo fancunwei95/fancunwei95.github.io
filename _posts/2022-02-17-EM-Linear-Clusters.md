@@ -7,7 +7,7 @@ classes: wide
 
 Here is an interesting situation occurred to me. In a scatter plot, it is clear that there are two straight lines and each line is contanminated by some noise. Then it is interesting to find the slopes of the line and cluster the points. Since the original data is classified, let's do some simple toy test. Here I generate a toy example:
 
-[!image](/assets/images/tech_images/EMCluster_Raw.jpg){: .align-center})
+[!image](/assets/images/tech_images/EMCluster_Raw.png){: .align-center})
 
 ```python
 X = np.random.uniform(0,1,size= 1000)
@@ -40,18 +40,25 @@ The problem the contains the parameters  $\theta = \{\alpha_z, \beta_z, \sigma_z
 ### The EM algorithm for this model:
 
 If we are given the parameters $\theta_n$ at a given iteration $n$. Then the EM algorithm says:
+
 $$
 \theta_{n+1} = \arg\max_{\theta} \sum_{i=1}^N \sum_{z_i=1}^C p(z_i|\mathbf{x}_i,y_i,\theta_n) \left( \log(\alpha_{z_i}) -\frac{1}{2}\log \sigma_{z_i}^2 -  \frac{(y_i-\mathbf{x}_i\beta_{z_i})^2 }{2\sigma_{z_i}^2} \right)
 $$
- Note the factor $p(z_i = z|x_i,y_i,\theta_n)$ is fixed in this step and it simply assigns the point $\mathbf{x}_i,y_i$ to a specific cluster. We simplify the notation as $p({z_i}=z) = p(z_i = z|x_i,y_i,\theta_n)$. We also need to optimize subject to the constraint that $\sum_c \alpha_c = 1$.  Thus, the function becomes
+
+Note the factor $p(z_i = z|x_i,y_i,\theta_n)$ is fixed in this step and it simply assigns the point $\mathbf{x}_i,y_i$ to a specific cluster. We simplify the notation as $p({z_i}=z) = p(z_i = z|x_i,y_i,\theta_n)$. We also need to optimize subject to the constraint that $\sum_c \alpha_c = 1$.  Thus, the function becomes
+
 $$
 l(\theta) = \sum_{i=1}^N \sum_{z=1}^C p(z_i = z )\left( \log(\alpha_{z}) -\frac{1}{2}\log \sigma_{z}^2 -  \frac{(y_i-\mathbf{x}_i\beta_{z})^2 }{2\sigma_{z}^2} \right) - \lambda \sum_{c=1}^C \alpha_c
 $$
+
 The fixed factor
+
 $$
 p(z_i = z | x_i, y_i,\theta) = \frac{1}{Z}{\alpha_z \frac{1}{\sqrt{2\pi\sigma_z^2}} \exp(-\frac{(y_i-x_i\beta)^2}{2\sigma_z^2}) }
 $$
+
 with $Z$ acts as the normalization
+
 $$
 Z = \sum_{z=1}^C {\alpha_z \frac{1}{\sqrt{2\pi\sigma_z^2}} \exp(-\frac{(y_i-x_i\beta)^2}{2\sigma_z^2})  }
 $$
@@ -246,7 +253,7 @@ plt.scatter(X,y,c = clas)
 plt.show()
 ```
 
-[!image](/assets/images/tech_images/EMCluster_Clas.jpg){: .align-center})
+[!image](/assets/images/tech_images/EMCluster_Clas.png){: .align-center})
 
 It is also worths to check out parameter estimation:
 ```python
@@ -265,7 +272,9 @@ beta2 [9.99494678]
 
 This estimation is pretty good except that because the variance for the slope $1$ cluster is too large, the slope estimation is not that good. This effect is worse when we only have 30 percent of the data points are from that cluster. 
 
-
+### Some Comments
+Althogh this works for this simple toy problem, it is not guaranteed to converge well on an arbitrary dataset. This heavily depends on the initialization. Also, this algorithm is not the only possible one. Here we use the $y$ distance 
+to model the relation between points and the hidden lienar line. We could also use "point to line distance" to preserve the symmetry between $x$, $y$. If I have time in the future, will try for that model. 
 
 
 
