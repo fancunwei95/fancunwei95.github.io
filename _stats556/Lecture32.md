@@ -21,7 +21,7 @@ $$
 
 At each time step, recursively compute the optimal linear predicted value of $\xi_{t+1}$ based on the data observed up to time point $t$, i.e. 
 
-given $D_t = (y_t,\dots, y_1; x_t,\dots, x_1)$  and $a_{}$ predict 
+given $D_t = (y_t,\dots, y_1; x_t,\dots, x_1)$  predict 
 
 $$
 \hat{\xi}_{t+1|t} = \mathbb{E}(\xi_{t+1}|D_t)
@@ -33,7 +33,7 @@ $$
 P_{t+1|t} = \mathbb{E}(\hat\xi_{t+1|t} - \xi_{t+1}) (\hat\xi_{t+1|t} - \xi_{t+1})^T
 $$
 
-Initialization: $\xi_{1|0} = \mathbb{E}(\xi_1 | D_0) = \mathbb{E}[\xi_1]$ where $D_0$ means there is no data. The expected MSE is 
+Initialization: $\xi_{1\|0} = \mathbb{E}(\xi_1 \| D_0) $  $= \mathbb{E}[\xi_1]$ where $D_0$ means there is no data. The expected MSE is 
 
 $$
 P_{1|0} = \mathbb{E}(\mathbb{E}\xi_1-\xi_1) (\mathbb{E}\xi_1-\xi)^T = \text{Cov}(\xi_1)
