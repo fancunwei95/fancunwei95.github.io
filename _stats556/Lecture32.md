@@ -13,8 +13,10 @@ Idea: Sequentially updating a (linear) projection of the dynamical system (Kalma
 Recall: 
 
 $$
+\begin{aligned}
 &\xi_{t+1} = F\xi_t + V_{t+1} \\
 &y_t = A^T x_t + H^T\xi_t + W_t
+\end{aligned}
 $$
 
 At each time step, recursively compute the optimal linear predicted value of $\xi_{t+1}$ based on the data observed up to time point $t$, i.e. 
@@ -93,22 +95,21 @@ $$
 &P_{t|t} = \mathbb{E}(\hat\xi_{t|t} - \xi) (\hat\xi_{t|t} - \xi_t)^T \\
 &= P_{t|t-1} - P_{t|t-1} H (H^T P_{t|t-1} H +R)^{-1} H^TP_{t|t-1}
 \end{aligned}
-
 $$
+
 (iii) predict $\xi_{t+1|t}$, 
-$$
 
+$$
 \hat\xi_{t+1} = \mathbb{E} (\xi_{t+1}|D_t) = \mathbb{E}(F\xi_t+V_{t+1} |D_t) = F\hat\xi_{t|t}
-
 $$
+
 combining we could have 
-$$
 
+$$
 \hat\xi_{t+1|t} = F\hat\xi_{t|t-1} + FP_{t|t-1} H(H^T P_{t+1|t} H + R)^{-1}[y_t - A^T x_t - H^T \hat\xi_{t|t-1}] 
-
 $$
-the second term is called the Kalman gain. 
 
+the second term is called the Kalman gain. 
 and 
 
 $$
