@@ -14,7 +14,9 @@ gallery:
   - url: /assets/images/life_posts/20220320son_month2.jpg
     image_path: assets/images/life_posts/20220320son_month2.JPG
     alt: "little son 3"
-  - url: /assets/images/life_posts/20220320son_month3.jpg
+
+gallery2:
+   - url: /assets/images/life_posts/20220320son_month3.jpg
     image_path: assets/images/life_posts/20220320son_month3.JPG
     alt: "little son 4"
    - url: /assets/images/life_posts/20220320son_month4.jpg
@@ -33,4 +35,4 @@ My son turns to one month and he is so cute. He has a name now : Xuanyi Ben Fan 
 Here are some photos during these days. Cutie...
 
 
-{% include gallery caption="some cute photos during thesedays" %}
+
