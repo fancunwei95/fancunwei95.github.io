@@ -5,24 +5,24 @@ author_profile: false
 classes: wide
 
 gallery:
-  - url: /assets/images/life_posts/20220320son_month.jpg
+  - url: /assets/images/life_posts/20220320son_month.JPG
     image_path: assets/images/life_posts/20220320son_month.JPG
     alt: "little son 1"
-  - url: /assets/images/life_posts/20220320son_month1.jpg
+  - url: /assets/images/life_posts/20220320son_month1.JPG
     image_path: assets/images/life_posts/20220320son_month1.JPG
     alt: "little son 2"
-  - url: /assets/images/life_posts/20220320son_month6.jpg
+  - url: /assets/images/life_posts/20220320son_month6.JPG
     image_path: assets/images/life_posts/20220320son_month6.JPG
     alt: "little son 3"
-  - url: /assets/images/life_posts/20220320son_month3.jpg
+  - url: /assets/images/life_posts/20220320son_month3.JPG
     image_path: assets/images/life_posts/20220320son_month3.JPG
-    alt: "little son 1"
-  - url: /assets/images/life_posts/20220320son_month2.jpg
+    alt: "little son 4"
+  - url: /assets/images/life_posts/20220320son_month2.JPG
     image_path: assets/images/life_posts/20220320son_month2.JPG
-    alt: "little son 2"
-  - url: /assets/images/life_posts/20220320son_month4.jpg
+    alt: "little son 5"
+  - url: /assets/images/life_posts/20220320son_month4.JPG
     image_path: assets/images/life_posts/20220320son_month4.JPG
-    alt: "little son 3"
+    alt: "little son 6"
 
 ---
 
