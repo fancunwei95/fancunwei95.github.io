@@ -1,5 +1,5 @@
 ---
-title: My cute son turns to one month old 
+title: My cute son's photos before he turns to one month
 category: life
 author_profile: false
 classes: wide
@@ -32,5 +32,5 @@ My son turns to one month and he is so cute. He has a name now : Xuanyi Ben Fan 
 
 Here are some photos during these days. Cutie...
 
-{% include gallery caption="some cute photos during thesedays" %}
 
+{% include gallery caption="some cute photos during thesedays" %}
