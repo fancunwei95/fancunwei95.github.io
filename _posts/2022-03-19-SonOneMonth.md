@@ -4,6 +4,17 @@ category: life
 author_profile: false
 classes: wide
 
+gallery:
+  - url: /assets/images/life_posts/20220320son_month.jpg
+    image_path: assets/images/life_posts/20220320son_month.JPG
+    alt: "little son 1"
+  - url: /assets/images/life_posts/20220320son_month1.jpg
+    image_path: assets/images/life_posts/20220320son_month1.JPG
+    alt: "little son 2"
+  - url: /assets/images/life_posts/20220320son_month2.jpg
+    image_path: assets/images/life_posts/20220320son_month2.JPG
+    alt: "little son 3"
+
 ---
 
 My son turns to one month and he is so cute. He has a name now : Xuanyi Ben Fan (范本轩逸). 
@@ -12,5 +23,5 @@ My son turns to one month and he is so cute. He has a name now : Xuanyi Ben Fan 
 
 Here are some photos during these days. Cutie...
 
-
+{% include gallery caption="some cute photos" %}
 
