@@ -11,8 +11,19 @@ gallery:
   - url: /assets/images/life_posts/20220320son_month1.jpg
     image_path: assets/images/life_posts/20220320son_month1.JPG
     alt: "little son 2"
+  - url: /assets/images/life_posts/20220320son_month6.jpg
+    image_path: assets/images/life_posts/20220320son_month6.JPG
+    alt: "little son 3"
+
+gallery2:
+  - url: /assets/images/life_posts/20220320son_month3.jpg
+    image_path: assets/images/life_posts/20220320son_month3.JPG
+    alt: "little son 1"
   - url: /assets/images/life_posts/20220320son_month2.jpg
     image_path: assets/images/life_posts/20220320son_month2.JPG
+    alt: "little son 2"
+  - url: /assets/images/life_posts/20220320son_month4.jpg
+    image_path: assets/images/life_posts/20220320son_month4.JPG
     alt: "little son 3"
 
 ---
@@ -25,3 +36,8 @@ Here are some photos during these days. Cutie...
 
 {% include gallery caption="some cute photos" %}
 
+
+and other little tiger photo:
+
+
+{% include gallery2 caption="cute little tiger" %}
