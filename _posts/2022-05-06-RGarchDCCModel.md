@@ -4,12 +4,19 @@ excerpt: Study of Garch model with realized variance and study the dynamic condi
 category: tech
 classes: wide
 ---
+
+The accompanying report is [here](/assets/other_pdfs/Stat566_project.pdf)
+
+The package `rGARCH_DCC` is included [here](/assets/other_pdfs/rGARCH_DCC.py) and it is **priliminary** and hopefully I can make it user friendly and will publish to my github. 
+
 ## Realized GARCH-DCC Model
 
 In this project we will study the realized GARCH-DCC model. This model is designed to do forecast of volatility and correlation among symbols. The model takes into high frequency data.
 
 Specifically, we let $r^i_t$ to denote the log return $\log P^i_t - \log P^i_{t-1}$ for stock $i$, $\sigma^i_t$ to be the conditional variance of stock $i$, $z_t^i$ to be the shock for stock $i$ and $C_t$ be the conditional correlation  matrix among  $z_t^i$. The model can be described as 
-\begin{align}
+
+$$
+\begin{aligned}
     &r_t^i = \mu^i + \sigma_t^i z_t^i \\
     &\log(\text{RV}_t^i) = \xi^i + \phi^i \log(\sigma_{t}^i)^2 + \tau^i_1 z_t^i + \tau^i_2 ((z_t^i)^2-1) + u_t^i\\
     &(\sigma_{t+1}^i)^2 = \omega^i + \beta^i (\sigma_{t}^i)^2 + \gamma^i \text{RV}_t^i \\
@@ -17,7 +24,9 @@ Specifically, we let $r^i_t$ to denote the log return $\log P^i_t - \log P^i_{t-
     &Q_{t+1} = S(1-a-b) + a (z_t z_t^T) +  bQ_t \label{eq:section2:covariance} \\
     &z_t \sim \mathcal{N}(0, C_t)  \\
     &u_t \sim \mathcal{N}(0, \Sigma_u) .
-\end{align}
+\end{aligned}
+$$
+
 The first equation describes the return using the volatility scale and the constant expected mean $\mu^i$. The second equation describes the "measurement" mechanics: the realized variance depends on the hidden true volatility and the shocks as well as a measurement noise $u_t$. These $u_t$ have zero pairwise correlation but have different scales for different stock $i$ and thus $\Sigma_u$ is a diagonal matrix. The log transformation on the measurement equation is to make the noise $u_t$ similar to Normal distribution. The third equation is the updating equation for the volatility $\sigma_t^i$. Notice, the usual GARCH model uses return squared to update the volatility but here, we use the more accurate estimate, the realized variance.  The $Q_{t}$ is the sample estimate of the conditional covariance matrix of $z_t$ and the update equation  is mean revert to the sample estimation $S$. The normalization ensures that the covariance matrix for the shocks is normalized. 
 
 
