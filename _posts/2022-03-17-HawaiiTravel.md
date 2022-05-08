@@ -27,8 +27,8 @@ FlightGlacier:
   - url: /assets/images/life_posts/hawaii/glacier2.JPG
     image_path: /assets/images/life_posts/hawaii/glacier2.JPG    
     alt: "glacier 2"
-  - url: /assets/images/life_posts/hawaii/glacier2.JPG
-    image_path: /assets/images/life_posts/hawaii/glacier2.JPG    
+  - url: /assets/images/life_posts/hawaii/glacier3.JPG
+    image_path: /assets/images/life_posts/hawaii/glacier3.JPG    
     alt: "glacier 3"
 
 FlightIsland:
@@ -68,7 +68,7 @@ We made up our plan around Feburary 20th, and we rent a Car from Expedia the car
 My friend booked the hotel. It is [Ramada](https://goo.gl/maps/ccqCRTyWauZGnRX96). It is behind the Hilton Hotel village. It is not far from the beach. However, it takes 15 mins to walk to waikiki beach, a famous beach in Honolulu. Overall, since Honolulu is not large, this hotel location is pretty good and you can basically reach anywhere by foot. But you can barely see the see from the hotel window. Ramada is not expensive and we add 30 bucks per night to add a bed for the little kid and 20 bucks for car parking. 
 {: .text-justify}
 
-![ramadamap](/assets/images/life_posts/hawaii/ramada_map.JPG)
+![ramadamap](/assets/images/life_posts/hawaii/ramada_map.JPG){: .width-half}
 
 
 ## Start On March 11st, 2022
@@ -86,7 +86,7 @@ During the flight, I was too boring and see the outside view is breath taking. I
 
 Besides, I see some weird large discs in Wyoming. This is really interesting and I do not know what they are constructed for. Anyone could tell me?
 
-![weirdCircle](/assets/images/life_posts/hawaii/circles.JPG)
+![weirdCircle](/assets/images/life_posts/hawaii/circles.JPG){: .width-half}
 
 
 We left the north america continent through california. after that, there is no beautiful views outside the plane. it was just blue oceans and white clouds. basically boring views... for around 5 hours flying on the
