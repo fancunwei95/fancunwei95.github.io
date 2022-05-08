@@ -41,5 +41,7 @@ __ByteDance__
 
 2. Li, Xiang, Cunwei Fan, Weiluo Ren, and Ji Chen. "Fermionic neural network with effective core potential." [Physical Review Research 4, no. 1 (2022): 013021.](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.013021)
 
+## Activities
 
+1. DSECOP Fellow, constructing data science tutoria material for physics students. [DSECOP Fellowship](https://dsecop.org/)
 

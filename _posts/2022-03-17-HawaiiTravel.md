@@ -12,6 +12,45 @@ CarRent:
     image_path: /assets/images/life_posts/hawaii/shit_car.JPG    
     alt: "The ugly mini Van"
 
+FlightInfo:
+  - url: /assets/images/life_posts/hawaii/flight_ticket.JPG
+    image_path: /assets/images/life_posts/hawaii/flight_ticket.JPG
+    alt: "Flight ticket"
+  - url: /assets/images/life_posts/hawaii/flightFood.JPG
+    image_path: /assets/images/life_posts/hawaii/flightFood.JPG    
+    alt: "Flight food"
+
+FlightGlacier:
+  - url: /assets/images/life_posts/hawaii/glacier1.JPG
+    image_path: /assets/images/life_posts/hawaii/glacier1.JPG
+    alt: "glacier 1"
+  - url: /assets/images/life_posts/hawaii/glacier2.JPG
+    image_path: /assets/images/life_posts/hawaii/glacier2.JPG    
+    alt: "glacier 2"
+  - url: /assets/images/life_posts/hawaii/glacier2.JPG
+    image_path: /assets/images/life_posts/hawaii/glacier2.JPG    
+    alt: "glacier 3"
+
+FlightIsland:
+  - url: /assets/images/life_posts/hawaii/city_overview.JPG
+    image_path: /assets/images/life_posts/hawaii/city_overview.JPG
+    alt: "city_overview"
+  - url: /assets/images/life_posts/hawaii/island_overview.JPG
+    image_path: /assets/images/life_posts/hawaii/island_overview.JPG    
+    alt: "island overview"
+  - url: /assets/images/life_posts/hawaii/flight_montain.JPG
+    image_path: /assets/images/life_posts/hawaii/flight_montain.JPG    
+    alt: "montain overview"
+
+FlightArmy:
+  - url: /assets/images/life_posts/hawaii/helicopter.JPG
+    image_path: /assets/images/life_posts/hawaii/helicopter.JPG
+    alt: "helicopters"
+  - url: /assets/images/life_posts/hawaii/battleship.JPG
+    image_path: /assets/images/life_posts/hawaii/battleship.JPG    
+    alt: "battleships"
+
+  
 
 ---
 
@@ -35,8 +74,36 @@ My friend booked the hotel. It is [Ramada](https://goo.gl/maps/ccqCRTyWauZGnRX96
 ## Start On March 11st, 2022
 
 Our flight is UA219 and the flight duration is around 9 hours. In the morning,
-we arrived at the airport around 7:30. We bought some great hotdogs for breakfast and Mcdonald's for lunch in the plane since the free food in plane is not enough. I got somebeautiful photos from my phone for the glaciers in South Dokota, Wyoming and Motana.
+we arrived at the airport around 7:30. We bought some great hotdogs for breakfast and Mcdonald's for lunch in the plane since the free food in plane is not enough.
+
+
+{% include gallery id="FlightInfo" caption="The flight ticket and the terrible food I got in the UA flight" %}
+
+During the flight, I was too boring and see the outside view is breath taking. I got some beautiful photos from my phone for the glaciers in South Dokota, Wyoming and Motana. They are not as great as what I saw in the plane.... though.... 
 {: .text-justify}
+
+{% include gallery id="FlightGlacier" caption="The glaciers in Wyoming, Motana and South Dokota" %}
+
+Besides, I see some weird large discs in Wyoming. This is really interesting and I do not know what they are constructed for. Anyone could tell me?
+
+![weirdCircle](/assets/images/life_posts/hawaii/circles)
+
+
+We left the north america continent through california. after that, there is no beautiful views outside the plane. it was just blue oceans and white clouds. basically boring views... for around 5 hours flying on the
+blue ocean, we finally see the oahu island of hawaii. the view is really beautiful: the yellow beaches, the green montains and the blue see are blended together.  {:.text-justify}
+
+
+{% include gallery id="FlightIsland" caption="The view of the Oahu Island from the flight" %}
+
+Besides the natural view, I saw American airforce and battle ships. 
+
+{% include gallery id="FlightArmy" caption="The helicopters and the battleship I saw from the flight" %}
+
+
+After getting off the plane, it took us one and half hour to get out of the airport because of the vaccination record checking. as a result, we missed the deadline to pick up the rentted car and get the "bird shit" mini van.
+we drove to the ramada hotel and had a first glance of the honolulu city. it appears older than i thought and gave me an impression of south aisa, like thailand or phillipine. after check in and it was 5:30 pm. we went to see the sunset and hope to see the fireworks by hilton. but the fireworks by hilton is at 8:00 pm and we were too hungry and we tried to find restaurant for dinner. we had cajun "seafood" including shrimp, mussel and potatoes.
+it was the same as i had back in illinois, really bad...... disappointed about the food. hope we could find better food tomorrow. {:.text-justify}
+
 
 
 
