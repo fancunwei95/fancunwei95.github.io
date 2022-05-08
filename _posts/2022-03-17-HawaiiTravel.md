@@ -86,7 +86,7 @@ During the flight, I was too boring and see the outside view is breath taking. I
 
 Besides, I see some weird large discs in Wyoming. This is really interesting and I do not know what they are constructed for. Anyone could tell me?
 
-![weirdCircle](/assets/images/life_posts/hawaii/circles)
+![weirdCircle](/assets/images/life_posts/hawaii/circles.JPG)
 
 
 We left the north america continent through california. after that, there is no beautiful views outside the plane. it was just blue oceans and white clouds. basically boring views... for around 5 hours flying on the
