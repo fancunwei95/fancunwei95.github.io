@@ -90,7 +90,8 @@ Besides, I see some weird large discs in Wyoming. This is really interesting and
 
 
 We left the north america continent through california. after that, there is no beautiful views outside the plane. it was just blue oceans and white clouds. basically boring views... for around 5 hours flying on the
-blue ocean, we finally see the oahu island of hawaii. the view is really beautiful: the yellow beaches, the green montains and the blue see are blended together.  {:.text-justify}
+blue ocean, we finally see the oahu island of hawaii. the view is really beautiful: the yellow beaches, the green montains and the blue see are blended together.  
+{:.text-justify}
 
 
 {% include gallery id="FlightIsland" caption="The view of the Oahu Island from the flight" %}
@@ -102,7 +103,8 @@ Besides the natural view, I saw American airforce and battle ships.
 
 After getting off the plane, it took us one and half hour to get out of the airport because of the vaccination record checking. as a result, we missed the deadline to pick up the rentted car and get the "bird shit" mini van.
 we drove to the ramada hotel and had a first glance of the honolulu city. it appears older than i thought and gave me an impression of south aisa, like thailand or phillipine. after check in and it was 5:30 pm. we went to see the sunset and hope to see the fireworks by hilton. but the fireworks by hilton is at 8:00 pm and we were too hungry and we tried to find restaurant for dinner. we had cajun "seafood" including shrimp, mussel and potatoes.
-it was the same as i had back in illinois, really bad...... disappointed about the food. hope we could find better food tomorrow. {:.text-justify}
+it was the same as i had back in illinois, really bad...... disappointed about the food. hope we could find better food tomorrow. 
+{:.text-justify}
 
 
 
