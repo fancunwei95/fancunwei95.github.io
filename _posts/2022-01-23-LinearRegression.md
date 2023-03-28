@@ -131,7 +131,8 @@ $$
 
 This constructed $\omega^i$ satisfies the above property. 
 
-Now come back to linear regression. The variance for the $\hat{\beta}_i$ will be the matrix $(X^TX)^{-1}_{ii}$  which is $G^{ii}$ which is 
+Now come back to linear regression. The variance for the $\hat{\beta}_{i}$ 
+will be the matrix $(X^TX)^{-1}_{ii}$  which is $G^{ii}$ which is 
 
 $$
 G^{ii} = G^{ij} \delta_{j}^i = G^{ij}G_{jk}G^{ki} = G^{ij} x_j x_k G^{ki} = \omega^i \omega^i = \frac{1}{\|\tilde{\omega}^i\|^2}
