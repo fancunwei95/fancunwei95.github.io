@@ -109,8 +109,6 @@ $$
 which means $R^2$ is the correlation squared between $y$ and $x$. 
 
 
-
-
 ### Some Notes on Projection
 
 Consider the matrix $X^TX$ with $X$ as a matrix of column stacking $p$ Vectors. Each vector is denoted as $x_i$ and the vector has components $n$ and the component of $x_i$ is denoted as $x_{i}^\alpha$.  Let $G = X^TX$. It has components as $G_{ij}$. We denote the components of its inverse as $G^{ij}$. it is natrual to ask what the vector $\omega^{i\alpha} = G^{ij}x_j^\alpha$ is . Note that 
