@@ -109,4 +109,34 @@ $$
 which means $R^2$ is the correlation squared between $y$ and $x$. 
 
 
-This is my second post.
+
+
+### Some Notes on Projection
+
+Consider the matrix $X^TX$ with $X$ as a matrix of column stacking $p$ Vectors. Each vector is denoted as $x_i$ and the vector has components $n$ and the component of $x_i$ is denoted as $x_{i}^\alpha$.  Let $G = X^TX$. It has components as $G_{ij}$. We denote the components of its inverse as $G^{ij}$. it is natrual to ask what the vector $\omega^{i\alpha} = G^{ij}x_j^\alpha$ is . Note that 
+
+$$
+\omega^{i\alpha} x^\alpha_k = G^{ij}x_j^\alpha x_k^\alpha = G^{ij}G_{jk} = \delta_{k}^i
+$$
+
+We can treat the $\omega^i$ as the dual basis of $x_i$. Let $P_i$ denote the projection on subspace spanned by $x_j$ for $j\neq i$ , we propose that 
+
+$$
+\tilde{\omega}^i = (1 - P_i) x_i
+$$
+
+and 
+
+$$
+\omega^i = \frac{\tilde{\omega}^i}{\tilde{\omega}^i\cdot x_i} = \frac{\tilde{\omega}^i}{\| \tilde{\omega}^i\|^2}
+$$
+
+This constructed $\omega^i$ satisfies the above property. 
+
+Now come back to linear regression. The variance for the $\hat{\beta}_i$ will be the matrix $(X^TX)^{-1}_{ii}$  which is $G^{ii}$ which is 
+
+$$
+G^{ii} = G^{ij} \delta_{j}^i = G^{ij}G_{jk}G^{ki} = G^{ij} x_j x_k G^{ki} = \omega^i \omega^i = \frac{1}{\|\tilde{\omega}^i\|^2}
+$$
+
+The projected $\tilde{\omega}^i$ can then be constructed by regress $x_i$ on $x_{/i}$ where $x_{/i}$ is the space formed by $x_j$ for all $j\neq i$.  
