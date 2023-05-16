@@ -25,6 +25,12 @@ __B.Sc. Physics (University of Illinois Urbana Champaign)__
 
 ## Work Experience
 
+### __QuantLab  Financial, LLC.__
+
+- Quantitative Researcher Internship
+- Jun,2022 - Aug, 2022, Houston, TX, US.
+- Study MSCI factor models to extract mean reverting signals and fitting models to predict daily returns
+
 __Barclays Investment Bank__
 - E-trading and machine learning summer internship 
 - Jun,2021 - Aug,2021, New York, NY, US.
