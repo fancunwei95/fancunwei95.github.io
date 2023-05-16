@@ -50,6 +50,17 @@ FlightArmy:
     image_path: /assets/images/life_posts/hawaii/battleship.JPG    
     alt: "battleships"
 
+DiamondHead:
+  - url: /assets/images/life_posts/hawaii/diamond_head1.jpg
+    image_path: /assets/images/life_posts/hawaii/diamond_head1.jpg
+    alt: "diamond head waikiki view"
+  - url: /assets/images/life_posts/hawaii/diamond_head2.jpg
+    image_path: /assets/images/life_posts/hawaii/diamond_head2.jpg  
+    alt: "diamond head village"
+  - url: /assets/images/life_posts/hawaii/diamond_head3.jpg
+    image_path: /assets/images/life_posts/hawaii/diamond_head3.jpg  
+    alt: "diamond head sea"
+
   
 
 ---
@@ -88,9 +99,8 @@ Besides, I see some weird large discs in Wyoming. This is really interesting and
 
 ![weirdCircle](/assets/images/life_posts/hawaii/circles.JPG){: .width-half}
 
-
 We left the north america continent through california. after that, there is no beautiful views outside the plane. it was just blue oceans and white clouds. basically boring views... for around 5 hours flying on the
-blue ocean, we finally see the oahu island of hawaii. the view is really beautiful: the yellow beaches, the green montains and the blue see are blended together.  
+blue ocean, we finally see the oahu island of hawaii. the view is really beautiful: the yellow beaches, the green montains and the blue sea are blended together.  
 {:.text-justify}
 
 
@@ -100,11 +110,21 @@ Besides the natural view, I saw American airforce and battle ships.
 
 {% include gallery id="FlightArmy" caption="The helicopters and the battleship I saw from the flight" %}
 
-
-After getting off the plane, it took us one and half hour to get out of the airport because of the vaccination record checking. as a result, we missed the deadline to pick up the rentted car and get the "bird shit" mini van.
-we drove to the ramada hotel and had a first glance of the honolulu city. it appears older than i thought and gave me an impression of south aisa, like thailand or phillipine. after check in and it was 5:30 pm. we went to see the sunset and hope to see the fireworks by hilton. but the fireworks by hilton is at 8:00 pm and we were too hungry and we tried to find restaurant for dinner. we had cajun "seafood" including shrimp, mussel and potatoes.
-it was the same as i had back in illinois, really bad...... disappointed about the food. hope we could find better food tomorrow. 
+After getting off the plane, it took us one and half hour to get out of the airport because of the vaccination record checking. as a result, we missed the deadline to pick up the rented car and get the "bird shit" mini van.
+we drove to the Ramada hotel and had a first glance of the Honolulu city. it appears older than i thought and gave me an impression of south Asia, like Thailand or Philippine. after check in and it was 5:30 pm. we went to see the sunset and hope to see the fireworks by Hilton. but the fireworks by Hilton is at 8:00 pm and we were too hungry and we tried to find restaurant for dinner. we had cajun "seafood" including shrimp, mussel and potatoes.
+it was the same as I  had back in Illinois, really bad...... disappointed about the food. hope we could find better food tomorrow. 
 {:.text-justify}
+
+## On  March 12st, 2022
+
+We waked up early because of the jet lag and we stuck with our plan to go to the diamond head in the morning. The diamond head opens up early in the morning but we arrived at around 9:00 am. We stopped in the midway to the Diamond Head because we were so attracted by the sea view besides the road. The houses on the other side of the road are also cute and we saw some people wearing sport suits, who must have been back from the morning jogging, walked into the house. We really envy those people!
+
+We parked the car in the parking lot which costs around 10 dollars and we went to the ticket machine to buy tickets. Those machine works fine with cash and cards and you do not need to prepare cash in advance. While waiting at the security check, there were some pineapple juice sold there. Be sure to buy one since we did not see any second place to sell such pineapple juice. We really regretted on that. The pineapple juice was filled into a pineapple crust and when you finish the juice, you could use spoon to eat some of the pineapples on the edge. 
+
+After passing through the security check, we started to hike towards the top of the Diamonds Head. It was not an easy hiking, it was consuming and be sure to prepare some water before the hiking. However, the view on the top of the Diamond Head worth the hard working. {:.text-justify}
+
+{% include gallery id="DiamondHead" caption="Some views and pictures taken on the Diamond Head. The left: the waikiki beach view from the Diamond Head. The middle: some residence communities lie in the mountains and valleys. THe right: The sea view from the Diamond Head" %}
+
 
 
 
