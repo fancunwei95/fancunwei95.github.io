@@ -26,3 +26,7 @@ There are some notes I have taken in my studying path. Some of them are merely l
 - Solutions to *Geometry, Topology and Physics* (working on it)
 - Solutions to *Probability: Theory and Examples (Durett)* (working on it)
 - Solutions to *Lie Groups, Lie Algebras and Representations (Brian Hall)* (working on it)
+
+### Large Language Models
+
+- [Reinforcement learning in large language models — a physicist's guide]({{ site.url }}/assets/rl_llm_guide.html)
