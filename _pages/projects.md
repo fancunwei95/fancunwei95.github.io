@@ -7,6 +7,15 @@ font-size: "18px"
 
 In my career, I have done various projects and here lists some of them. They range from theoretical physics project to statistical projects. 
 
+## Ongoing Projects
+
+### Daily Equity Long/Short Reports — *Live*
+
+A continuously running personal experiment in systematic equity research, refreshed before every U.S. market open. Each morning, a small long/short portfolio rolls onto the dashboard; each position is held for five trading days, then closed out and folded into a public ledger of realized returns, with open positions ticking live at mark-to-market throughout the week. Every name is accompanied by a brief, model-written synthesis of the news and fundamentals that motivated the trade. A companion **Top 20 Breaking News** brief, regenerated every trading day, distils the morning's most market-moving headlines for U.S. equities into a single scannable digest — a quick read for anyone who wants the day's tape in one place. The full pipeline — signal generation, basket construction, news ingestion, narrative synthesis, and report rendering — runs unattended on top of the Anthropic Claude API in headless mode. It is a living project: positions update in real time, the report queue grows by one each session, and the experiment keeps going. Live and ongoing at [fancunwei95.github.io/EquityReports](https://fancunwei95.github.io/EquityReports/).
+{: .text-justify}
+
+## Past Projects
+
 ### Lepton Isolation Problem with Neural Networks 
 <p><img src="{{ site.url }}/assets/images/projects_images/BubbleTracks480.jpeg" alt="image" class="align-left" style="max-width: 330px; margin-top:1em"></p>
 
