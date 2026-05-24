@@ -10,11 +10,11 @@ header:
   overlay_padding: "7em 0"
 
   actions:
-    - label: "Hooberman's group"
-      url: "http://research.physics.illinois.edu/hooberman/"
+    - label: "Quantlab"
+      url: "https://www.quantlab.com/"
 excerpt: >
-  <small>Ph.D. candidate at University of Illinois</small><br />
-  <small>Interested in physics, statistics and quantatitive finance</small>
+  <small>Quant Researcher at Quantlab</small><br />
+  <small>Interested in physics, statistics and quantitative finance</small>
 
 ---
 
